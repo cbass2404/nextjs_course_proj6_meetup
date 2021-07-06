@@ -1,9 +1,9 @@
-const MeetupPage = () => {
-    return (
-        <div>
-            <h1>MeetupPage</h1>
-        </div>
-    );
+import MeetupDetail from '../../components/meetups/MeetupDetail';
+
+import { DUMMY_MEETUPS } from '../index';
+
+const MeetupPage = (props) => {
+    return <MeetupDetail meetup={DUMMY_MEETUPS[0]} />;
 };
 
 export default MeetupPage;
