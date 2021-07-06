@@ -2,8 +2,8 @@ import { getAllMeetups } from '../helpers/apiUtil';
 
 import MeetupList from '../components/meetups/MeetupList';
 
-const HomePage = ({ meetups }) => {
-    return <MeetupList meetups={meetups} />;
+const HomePage = (props) => {
+    return <MeetupList meetups={props.meetups} />;
 };
 
 export const getStaticProps = async () => {
@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
         props: {
             meetups,
         },
-        revalidate: 60,
+        revalidate: 1,
     };
 };
 
