@@ -13,7 +13,7 @@ const MeetupPage = (props) => {
                 <title>{props.meetup.title}</title>
                 <meta name="description" content={props.meetup.description} />
             </Head>
-            <MeetupDetail meetup={props.meetup} />;
+            <MeetupDetail meetup={props.meetup} />
         </Fragment>
     );
 };
