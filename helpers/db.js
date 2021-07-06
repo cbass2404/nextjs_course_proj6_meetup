@@ -7,6 +7,5 @@ export const connectToDatabase = async () => {
             useUnifiedTopology: true,
         }
     );
-
     return client;
 };

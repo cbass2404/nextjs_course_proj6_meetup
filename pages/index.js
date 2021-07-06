@@ -3,7 +3,6 @@ import { getAllMeetups } from '../helpers/apiUtil';
 import MeetupList from '../components/meetups/MeetupList';
 
 const HomePage = ({ meetups }) => {
-    console.log(meetups);
     return <MeetupList meetups={meetups} />;
 };
 
@@ -20,7 +19,7 @@ export const getStaticProps = async () => {
         props: {
             meetups,
         },
-        revalidate: 60 * 60,
+        revalidate: 60,
     };
 };
 
