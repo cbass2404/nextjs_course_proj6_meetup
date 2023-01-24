@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@scenes/*": ["src/scenes/*"],
+      "@shared/*": ["src/shared/*"],
+      "@constants": ["src/shared/constants.ts"],
+      "@handlers": ["src/shared/msw/index.ts"]
+    },
+    "jsx": "preserve",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "target": "ES5",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "declaration": true,
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useDefineForClassFields": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "incremental": true
+  },
+  "exclude": ["node_modules", ".next", "dist"],
+  "include": ["**/*.ts", "**/*.tsx", "jest.setup.js"]
+}
